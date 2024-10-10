@@ -1,0 +1,23 @@
+div{
+    border: 2px black solid;
+}
+#top{
+    background-color: indianred;
+    padding: 50px ;
+}
+#mag{
+    background-color: darkblue;
+    padding: 50px ;
+}
+#bad{
+    background-color: hotpink;
+    padding: 50px ;
+}
+#pad{
+    background-color: rebeccapurple;
+    padding: 50px ;
+}
+#con{
+    background-color: orangered;
+    padding: 50px ;
+}
