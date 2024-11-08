@@ -1,0 +1,9 @@
+p{
+    background-color: lightgrey;
+}
+h2{
+    background-color:darkgrey;
+}
+h2>p{
+    color:white`
+}

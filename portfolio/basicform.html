@@ -3,17 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="styles/port.css"
 </head>
 <body>
+<header>
+    <nav>
+        <a href="Cssblock.html">CSS vocab</a><br>
+        <a href="vocab3.html"> 3rd vocav</a><br>
+        <a href="index.html">Home</a><br>
+        <a href="table.html">plus operations</a><br>
+        <a href="website.html">types & table</a><br>
+        <a href="basicform.html">Basic Form</a><br>
+    </nav>
+</header>
     <form method=Post action="basicform.php" id="basicForm">
-        <h1>Basic Form</h1>
+       <fieldset>
+        <legend>Basic Form</legend>
         <label for="firstName">First Name:</label><br>
         <input type=text" id="firstName" name="firstName"><br>
         <label for="lastName">Last Name:</label><br>
         <input type="text" id="lastName" name="lastName"><br>
         <label for="birthDate">Birthdate:</label><br>
         <input type="date" id="birthDate" name="birthDate"><br>
-        <h2>Favorite Food</h2>
+       </fieldset>
+       <fieldset>
+            <legend>Favorite Food</legend>
         <label for="pizza">Pizza</label><br>
         <input type="radio" id="pizza" name="pizza"><br>
         <label for="pasta">Pasta</label><br>
@@ -21,6 +35,7 @@
         <label for="burger">Burger</label><br>
         <input type="radio" id="burger" name="burger"><br>
         <button type="submit">Button Submit Form</button><br>
+       </fieldset>
         <h2>Isaiah Hensley</h2>
     </form>
 </body>
