@@ -20,6 +20,11 @@
         const btnSub = document.getElementById("btnSub")
         const btnMul = document.getElementById("btnMul")
         const btnDiv = document.getElementById("btnDiv")
+        const btnEq = document.getElementById("btnEq")
+        let first;
+        let second;
+        let Op;
+
         btn0.addEventListener("click",(event)=>{
           display.value = display.value + "0";
         })
@@ -51,22 +56,34 @@
           display.value = display.value + "9";
         })
         btnAdd.addEventListener("click",(event)=>{
-          display.value = display.value + "+";
+          first = Number.parseFloat(display.value);
+          op="Add"
+          console.log(display.value);
+          display.value = ""
+          second = Number.parseFloat(display.value);
         })
         btnSub.addEventListener("click",(event)=>{
           display.value = display.value + "-";
+          console.log(display.value);
         })
         btnMul.addEventListener("click",(event)=>{
           display.value = "*" + display.value + "*";
+          console.log(display.value);
         })
         btnDiv.addEventListener("click",(event)=>{
           display.value = display.value + "/";
+          console.log(display.value);
+        })
+        btnEq.addEventListener("click",(event)=>{
+
+          display.value = display.value + "=";
+          console.log(display.value);
         })
       })
     </script>
   </head>
   <body>
-    <input id="Cal" type="number"><br>
+    <input id="Cal" type="text"><br>
     <button id="btn0" type="button">0</button>
     <button id="btn1" type="button">1</button>
     <button id="btn2" type="button">2</button>
@@ -81,5 +98,6 @@
     <button id="btnSub" type="button">Subtract</button>
     <button id="btnMul" type="button">Multiply</button>
     <button id="btnDiv" type="button">Divide</button>
+    <button id="btnEq" type="button">=</button>
   </body>
 </html>
