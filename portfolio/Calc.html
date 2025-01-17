@@ -23,7 +23,8 @@
         const btnEq = document.getElementById("btnEq")
         let first;
         let second;
-        let Op;
+        let opp;
+        let an;
 
         btn0.addEventListener("click",(event)=>{
           display.value = display.value + "0";
@@ -57,27 +58,43 @@
         })
         btnAdd.addEventListener("click",(event)=>{
           first = Number.parseFloat(display.value);
-          op="Add"
+          opp="add"
           console.log(display.value);
           display.value = ""
-          second = Number.parseFloat(display.value);
         })
         btnSub.addEventListener("click",(event)=>{
-          display.value = display.value + "-";
+          first = display.value = display.value + "-";
+          opp="sub"
           console.log(display.value);
+          display.value = ""
         })
         btnMul.addEventListener("click",(event)=>{
-          display.value = "*" + display.value + "*";
+          first = display.value = "*" + display.value + "*";
+          opp="mul"
           console.log(display.value);
+          display.value = ""
         })
         btnDiv.addEventListener("click",(event)=>{
-          display.value = display.value + "/";
+          first = display.value = display.value + "/";
+          opp="div"
           console.log(display.value);
+          display.value = ""
         })
         btnEq.addEventListener("click",(event)=>{
-
-          display.value = display.value + "=";
-          console.log(display.value);
+          first = second = Number.parseFloat(display.value);
+          display.value = ""
+          else if (opp == "sub") {
+            an = first + second
+            display.value = an
+          }
+          else if (opp == "mul") {
+            an = first + second
+            display.value = an
+          }
+          else if (opp == "div") {
+            an = first + second
+            display.value = an
+          }
         })
       })
     </script>
