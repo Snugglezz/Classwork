@@ -8,6 +8,7 @@
             const display = document.getElementById("Cal")
             const noom = document.getElementById("noom")
             const choice = document.getElementById("choice")
+            const btnEq = document.getElementById("btnEq")
             // const btn0 = document.getElementById("btn0")
             // const btn1 = document.getElementById("btn1")
             // const btn2 = document.getElementById("btn2")
@@ -30,29 +31,32 @@
 
             noom.addEventListener("click", (event) => {
                 console.log(event.target.textContent)
-                display.value = display.value + event.target.textContent
+                display.value = event.target.textContent + display.value;
             })
             choice.addEventListener("click", (event) => {
                 console.log(event.target.textContent)
-                display.value = display.value + event.target.textContent
+                // display.value = display.value + event.target.textContent
                 first = Number.parseFloat(display.value);
-                opp = "add", "sub", "mul", "div"
+                opp = event.target.textContent
                 console.log(display.value);
                 display.value = ""
             })
-                if (opp == "add") {
-                    an = first + second
-                    display.value = an
-                } else if (opp == "sub") {
-                    an = first - second
-                    display.value = an
-                } else if (opp == "mul") {
-                    an = first * second
-                    display.value = an
-                } else if (opp == "div") {
-                    an = first / second
-                    display.value = an
-                }
+                btnEq.addEventListener("click", (event) => {
+                    second = Number.parseFloat(display.value);
+                    if (opp == "Add") {
+                        an = first + second
+                        display.value = an
+                    } else if (opp == "Subtract") {
+                        an = first - second
+                        display.value = an
+                    } else if (opp == "Multiply") {
+                        an = first * second
+                        display.value = an
+                    } else if (opp == "Divide") {
+                        an = first / second
+                        display.value = an
+                    }
+                })
             })
             // btn0.addEventListener("click", (event) => {
             //     display.value = display.value + "0";
