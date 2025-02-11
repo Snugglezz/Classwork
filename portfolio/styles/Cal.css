@@ -1,0 +1,19 @@
+span {
+    width:20rem;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    border: black 1px solid;
+}
+button {
+    width: 6rem;
+    height: 2rem;
+    background-color: crimson;
+    border-radius: 1rem;
+}
+div {
+    width:19rem;
+    /*height: 2rem;*/
+    margin-left: auto;
+    margin-right: auto;
+}
