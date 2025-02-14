@@ -12,6 +12,7 @@
                 const output = document.getElementById("output")
 
                 buttonSave.addEventListener("click", (event) => {
+                    event.preventDefault()
                     checkedInputs = [];
                     const inputs = Array.from(document.getElementsByTagName('input'))
                     inputs.forEach((element) => {
