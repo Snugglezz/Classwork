@@ -4,16 +4,28 @@
         <meta charset="UTF-8">
         <title>Title</title>
         <script>
-            document.addEventListener("DOMContentLoaded",(ev)=>{
-                console.log("page loaded")
-            const save_button = document.getElementById("saveBtn");
-            console.log(save_button);
-            const students = ["chris","bendjy"];
-            for(let index = 0; index < students.length; index ++)
-                console.log('Name of student is: ' + students[index]);
-                const students = ["jason","jamel"];
-                for(let index = 1; index < 12; index ++)
-                    console.log(1-11 + students[index]);
+            document.addEventListener("DOMContentLoaded",(event)=> {
+
+                const buttonSave = document.getElementById("btnSave")
+                console.log(buttonSave)
+                let checkedInputs = [];
+                const output = document.getElementById("output")
+
+                buttonSave.addEventListener("click", (event) => {
+                    checkedInputs = [];
+                    const inputs = Array.from(document.getElementsByTagName('input'))
+                    inputs.forEach((element) => {
+                        if (element.checked) {
+                            let checked = {}
+                            checked["id"] = element.id
+                            console.log(checked)
+                            checkedInputs.push(checked)
+                        }
+
+                    })
+                    output.textContent = JSON.stringify(checkedInputs)
+
+                })
             })
         </script>
     </head>
@@ -297,6 +309,9 @@
                 <input type="radio" id="3yp" name="3y" value="proficient">
                 <label for="3ya">Advanced</label>
                 <input type="radio" id="3ya" name="3y" value="exposed">
+                <button type="submit" id="btnSave">
+
+                    <h2 id="output">You Entered:</h2>
             </form>
         </main>
         <footer></footer>
