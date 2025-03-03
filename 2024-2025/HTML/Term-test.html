@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Title</title>
+      <link rel="stylesheet" href="term.css">
+  </head>
+  <body>
+  <form method="POST" action="processTest.php">
+      <h1>Form Test</h1>
+      <fieldset id="ph">
+        <legend>Agile SDLC</legend>
+          <label for="phase">Favorite Agile Phase:</label>
+          <select id="phase">
+              <option value="Conception">Conception</option>
+              <option value="Interception">Interception</option>
+              <option value="Interaction">Interaction</option>
+              <option value="Release">Release</option>
+              <option value="Maintenance">Maintenance</option>
+              <option value="Retirement">Retirement</option>
+          </select>
+      </fieldset>
+      <fieldset id="layer">
+          <legend>Three-layer Application</legend>
+          <h1>Choose Your Favorite Layer to Code</h1>
+          <label for="ui">Presentation</label><br>
+          <input type="radio" id="ui" name="ui"><br>
+          <label for="logic">Logic</label><br>
+          <input type="radio" id="logic" name="logic"><br>
+          <label for="da">Data Access</label><br>
+          <input type="radio" id="da" name="data access"><br>
+      </fieldset>
+      <fieldset id="jr">
+          <legend>Software Job Roles</legend>
+          <label for="job">Write/Choose Your Favorite Job Role</label>
+          <input list="role" id="job" name="role">
+          <datalist id="role">
+              <option value="front-end"></option>
+              <option value="back-end"></option>
+              <option value="data base"></option>
+          </datalist>
+      </fieldset>
+      <button type="submit">Submit</button>
+      <h2>Very Cool Form Page built by Isaiah Hensley</h2>
+  </form>
+  </body>
+</html>
