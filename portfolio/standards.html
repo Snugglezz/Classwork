@@ -22,10 +22,15 @@
                             console.log(checked)
                             checkedInputs.push(checked)
                         }
-
                     })
                     output.textContent = JSON.stringify(checkedInputs)
 
+                })
+                buttonReset.addEventListener("click", (event) => {
+                    const checked = output.textContent
+                    const checked_array = JSON.parse(checked)
+                    console.log(checked_array)
+                    checked_array.forEach()
                 })
             })
         </script>
@@ -311,6 +316,7 @@
                 <label for="3ya">Advanced</label>
                 <input type="radio" id="3ya" name="3y" value="exposed">
                 <button type="submit" id="btnSave">
+                <button type="reset" id="btnReset"
 
                     <h2 id="output">You Entered:</h2>
             </form>
