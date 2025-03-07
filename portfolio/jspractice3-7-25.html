@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Title</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", (et)=>{
+        const temp = document.getElementById("userTemp")
+        const checkTemp = document.getElementById("checkTemp")
+        const output = document.getElementById("output")
+
+        checkTemp.addEventListener("click",(evt)=>{
+          let difference = ((Number.parseFloat(temp.value)) - 32) * 5/9
+          output.textContent = difference
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <label for="userTemp">Whats the fckin tempature in Fahrenheit</label>
+      <input id="userTemp">
+      <button id="checkTemp">Enter</button>
+      <h3 id="output"></h3>
+    </main>
+    <footer></footer>
+  </body>
+</html>
