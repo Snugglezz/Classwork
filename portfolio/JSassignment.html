@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Title</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", (et)=>{
+        const age = document.getElementById("userAge")
+        const checkAge = document.getElementById("checkAge")
+        const output = document.getElementById("output")
+
+        checkAge.addEventListener("click",(evt)=>{
+          if (Number.parseInt(age.value) < 16) {
+            output.textContent = ("Your able to go to HS")
+          } else if (Number.parseInt(age.value) > 16)
+          output.textContent =("You Not able to go to HS")
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <label for="userAge">Whats your fckin age</label>
+    <input id="userAge">
+    <button id="checkAge">Enter</button>
+    <h3 id="output"></h3>
+  </body>
+</html>
