@@ -1,0 +1,7 @@
+table, tr, td{
+    border: 1px solid;
+}
+td{
+    color: hotpink;
+    padding: 30px;
+}
