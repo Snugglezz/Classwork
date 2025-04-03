@@ -6,24 +6,34 @@
   </head>
   <body>
     <header>
-      <h1>Isaiah Knows How to Use the DOM</h1>
+
     </header>
     <main>
-      <ol>
-        <li>minecraft</li>
-        <li>pizza</li>
-        <li>spaghetti</li>
-      </ol>
       <div id="div1">
         <p id="p1">This is a paragraph.</p>
         <p id="p2">This is another paragraph.</p>
       </div>
       <script>
-        const para = document.createElement("p");
-        const node = document.createTextNode("This is new.");
+        const para = document.createElement("h1");
+        const node = document.createTextNode("Isaiah Knows How to Use the DOM");
         para.appendChild(node);
+        const list = document.createElement("ol");
+        const pizz = document.createElement("li");
+        const mc = document.createElement("li");
+        const sg = document.createElement("li");
+        const game = document.createTextNode("minecraft");
+        const food = document.createTextNode("pizza");
+        const food2 = document.createTextNode("spaghetti");
+        pizz.appendChild(game);
+        mc.appendChild(food);
+        sg.appendChild(food2);
+        list.appendChild(pizz);
+        list.appendChild(mc);
+        list.appendChild(sg);
 
-        const element = document.getElementById("div1");
+        const fav = document.getElementsByTagName("main")[0];
+        fav.appendChild(list);
+        const element = document.getElementsByTagName("header")[0];
         element.appendChild(para);
       </script>
     </main>
