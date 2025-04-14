@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>ITS-A-TITLE</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1></h1>
+      <script>
+        const list = document.createElement("ol");
+        const li1 = document.createElement("li");
+        const li2 = document.createElement("li");
+        const li3 = document.createElement("li");
+        const node1 = document.createTextNode("Wake Up");
+        const node2 = document.createTextNode("Wash face");
+        const node3 = document.createTextNode("Brush Teeth");
+        li1.appendChild(node1);
+        li2.appendChild(node2);
+        li3.appendChild(node3);
+        list.appendChild(li1);
+        list.appendChild(li2);
+        list.appendChild(li3);
+        const fav = document.getElementsByTagName("main")[0];
+        fav.appendChild(list);
+      </script>
+    </main>
+    <footer></footer>
+  </body>
+</html>
