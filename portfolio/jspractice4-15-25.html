@@ -33,11 +33,17 @@
                     const study = soda.options[soda.selectedIndex].value
                     console.log(states)
                     console.log(study)
-                    if (lem==="lem" && soda === "soda") {
-                        message = "We found a University"
+                    if (states ==="C" && study === "G") {
+                        idfk.textContent = "We found a University in Cali that specilizes in Gaming"
+                    } else if (states === "NC" && study === "G") {
+                        idfk.textContent = "North cali has a Gaming Section!"
+                    } else if (states === "P" && study === "L") {
+                        idfk.textContent = "There is a Law class in the University of Pennsilvanya"
+                    } else if (states === "NC" && study === "CS") {
+                        idfk.textContent = "North cali has a University Focusing on Computer Science"
                     }
 
-                    })
+                })
             </script>
         </main>
         <footer></footer>
