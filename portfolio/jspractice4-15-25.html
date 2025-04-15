@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>IDFK</title>
+    </head>
+    <body>
+        <header>
+            <h1>How to get in Harvard University</h1>
+        </header>
+        <main>
+            <label for="lem">College</label>
+            <select id="lem">
+                <option value="C">Cali</option>
+                <option value="NC">North Cal</option>
+                <option value="P">Penn</option>
+            </select>
+            <label for="soda">What do you wanna study</label>
+            <select id="soda">
+                <option value="G">Gaming</option>
+                <option value="L">Law</option>
+                <option value="CS">CS</option>
+            </select>
+            <button type="submit" id="TT">Submit Taste Test</button>
+            <h2 id="idfk"></h2>
+            <script>
+                const lem = document.getElementById("lem")
+                const soda = document.getElementById("soda")
+                const idfk = document.getElementById("idfk")
+                const TT = document.getElementById("TT")
+                TT.addEventListener("click", (et) =>{
+                   const states = lem.options[lem.selectedIndex].value
+                    const study = soda.options[soda.selectedIndex].value
+                    console.log(states)
+                    console.log(study)
+                    if (lem==="lem" && soda === "soda") {
+                        message = "We found a University"
+                    }
+
+                    })
+            </script>
+        </main>
+        <footer></footer>
+    </body>
+</html>
