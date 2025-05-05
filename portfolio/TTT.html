@@ -3,22 +3,26 @@
     <head>
         <meta charset="UTF-8">
         <title>TikTakTok</title>
+        <link rel="stylesheet" href="styles/TTT2.css">
     </head>
     <body>
-        <h1>Tik Tak Two</h1>
+        <h1>Tok Tak Two</h1>
 
         <button id="b"></button>
         <button id="b1"></button>
-        <button id="b2"></button>
+        <button id="b2"></button><br>
         <button id="b3"></button>
         <button id="b4"></button>
-        <button id="b5"></button>
+        <button id="b5"></button><br>
         <button id="b6"></button>
         <button id="b7"></button>
-        <button id="b8"></button>
+        <button id="b8"></button><br>
 
-        <label></label>
-        <input>
+        <label for="XO">Who Goes first</label><br>
+        <select id="XO">
+            <option>X</option>
+            <option>O</option>
+        </select>
         <script>
             document.addEventListener("DOMContentLoaded",(evt) =>{
                 const x = document.getElementById(b)
@@ -29,7 +33,7 @@
                 const o2 = document.getElementById(b5)
                 const x3 = document.getElementById(b6)
                 const o4 = document.getElementById(b7)
-                const btnCon = document.getElementByID("btn combiened")
+                const btnCon = document.getElementById("btn combined")
                 btnCon.addEventListener("click", (ev) => {
                     ev.target.textContent = Content = "x"
                 })
