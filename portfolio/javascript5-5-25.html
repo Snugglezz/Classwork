@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <header></header>
+        <main>
+
+        </main>
+        <footer>
+            <script>
+                const table = document.createElement("table");
+                const tr1 = document.createElement("tr");
+                const tr2 = document.createElement("tr");
+                const tr3 = document.createElement("tr");
+                const td1 = document.createElement("td");
+                const td2 = document.createElement("td");
+                const td3 = document.createElement("td");
+                const td4 = document.createElement("td");
+                const td5 = document.createElement("td");
+                const td6 = document.createElement("td");
+                const td7 = document.createElement("td");
+                const td8 = document.createElement("td");
+                const td9 = document.createElement("td");
+
+                const node1 = document.createTextNode("x");
+                const node2 = document.createTextNode("x");
+                const node3 = document.createTextNode("x");
+                const node4 = document.createTextNode("x");
+                const node5 = document.createTextNode("x");
+                const node6 = document.createTextNode("x");
+                const node7 = document.createTextNode("x");
+                const node8 = document.createTextNode("x");
+                const node9 = document.createTextNode("x");
+
+                table.appendChild(tr1);
+                table.appendChild(tr2);
+                table.appendChild(tr3);
+
+                tr1.appendChild(td1);
+                tr1.appendChild(td2);
+                tr1.appendChild(td3);
+                tr2.appendChild(td4);
+                tr2.appendChild(td5);
+                tr2.appendChild(td6);
+                tr3.appendChild(td7);
+                tr3.appendChild(td8);
+                tr3.appendChild(td9);
+
+                td1.appendChild(node1);
+                td2.appendChild(node2);
+                td3.appendChild(node3);
+                td4.appendChild(node4);
+                td5.appendChild(node5);
+                td6.appendChild(node6);
+                td7.appendChild(node7);
+                td8.appendChild(node8);
+                td9.appendChild(node9);
+                const t = document.getElementsByTagName("body")[0];
+                t.appendChild(table);
+            </script>
+        </footer>
+    </body>
+</html>
