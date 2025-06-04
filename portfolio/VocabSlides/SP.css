@@ -3,5 +3,7 @@
 details ,summary {
     font-family: "Doto", sans-serif;
     font-weight: 400;
-    font-size:50px ;
+    font-size:35px ;
+    margin-inside:50px ;
+
 }
