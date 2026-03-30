@@ -8,7 +8,6 @@ def main():
             key = store[1]
             val = store[0]
             trans[key] = val
-    # print(trans)
     quit = "Y"
     while quit == "Y" or quit == "y":
         item = random.choice(list(trans.keys()))
