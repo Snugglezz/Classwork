@@ -10,7 +10,7 @@ def main():
             trans[key] = val
     # print(trans)
     quit = "Y"
-    while quit == "Y":
+    while quit == "Y" or quit == "y":
         item = random.choice(list(trans.keys()))
         answer = input(f"Whats the translation to {item}? ")
         if answer == trans.get(item) :
