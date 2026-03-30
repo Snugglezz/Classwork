@@ -8,3 +8,18 @@ seven:siete
 eight:ocho
 nine:nueve
 ten:diaz
+antes de:before
+hola:hello
+si:yes
+donde:where
+aqui:here
+dinero:money
+muy:very
+mi:my
+yo:i
+que:what
+quien:who
+el:the
+la:the
+hombre:man
+hermano:brother
